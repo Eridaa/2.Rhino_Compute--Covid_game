@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="shortcut icon" href="#">
+		<meta charset="utf-8">
+		<title>S1 - Lecture 2 - Example 3</title>
+		<style>
+			body { margin: 0; }
+
+			/* CSS for a spinning animation */ 
+			#loader {
+                border: 5px solid #f3f3f3; /* Light grey */
+                border-top: 5px solid #741919; /* Grey */
+                border-radius: 50%;
+                width: 100px;
+                height:100px;
+                animation: spin 1s linear infinite;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            #intro{
+               
+                width: 100px;
+                height:100px;
+                text-align: center;
+                position: absolute;
+                top: 53%;
+                left: 50%;
+                color: rgb(255, 255, 255);
+                font-family: 'Courier New', Courier, monospace;
+                /*color:#332b2b*/
+            }
+
+            ::-webkit-scrollbar {
+            width: 0;  
+            background: transparent; 
+}
+        
+
+		</style>
+	</head>
+	<body>
+        
+		<div id="loader"></div>
+        <div id="intro">
+            <p>Destroy covid</p>
+        </div>
+        
+
+        <script type="module" src="./script.js"></script>
+	</body>
+</html>
